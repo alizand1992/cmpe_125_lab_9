@@ -1,6 +1,7 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
 "../../../../extra_credit.srcs/sources_1/imports/new/Y_shift_register.v" \
+"../../../../extra_credit.srcs/sources_1/imports/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/alu.v" \
 "../../../../extra_credit.srcs/sources_1/imports/sources_1/imports/new/and2.v" \
 "../../../../extra_credit.srcs/sources_1/imports/sources_1/imports/new/cla.v" \
 "../../../../extra_credit.srcs/sources_1/imports/sources_1/new/cla8.v" \
@@ -15,7 +16,11 @@ verilog xil_defaultlib  \
 "../../../../extra_credit.srcs/sources_1/imports/new/mux2.v" \
 "../../../../extra_credit.srcs/sources_1/imports/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/mux4.v" \
 "../../../../extra_credit.srcs/sources_1/imports/sources_1/new/pp.v" \
+"../../../../extra_credit.srcs/sources_1/imports/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/register_file.v" \
 "../../../../extra_credit.srcs/sources_1/imports/new/shift_register.v" \
+"../../../../extra_credit.srcs/sources_1/imports/sources_1/new/small_calc_cu.v" \
+"../../../../extra_credit.srcs/sources_1/imports/sources_1/new/small_calc_cu_dp.v" \
+"../../../../extra_credit.srcs/sources_1/imports/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/small_calculator_dp.v" \
 "../../../../extra_credit.srcs/sources_1/imports/new/subtractor.v" \
 "../../../../extra_credit.srcs/sources_1/imports/new/ud_counter.v" \
 "../../../../extra_credit.srcs/sources_1/imports/sources_1/imports/new/xor2.v" \

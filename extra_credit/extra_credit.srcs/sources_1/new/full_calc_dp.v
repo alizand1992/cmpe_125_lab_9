@@ -8,13 +8,16 @@ module full_calc_dp(
     
     output done_calc, done_div, err,
     output [3:0] out_h,
-    output [3:0] out_l
+    output [3:0] out_l,
+    output [3:0] calc_cs
 );
 
     wire [2:0] cs;
-    wire [3:0] calc_cs;    
+//    wire [3:0] calc_cs;    
     wire [7:0] mul_out;
     wire [3:0] calc_out, q, r;
+    
+    wire[3:0] ph, pl;
     
     divider d(
         .go(go_div), .rst(rst), .clk(clk), .dividend(x), .divisor(y), 
@@ -30,9 +33,10 @@ module full_calc_dp(
         .done(done_calc), .out(calc_out), .cs(calc_cs)
     );
   
-    mux2 mux_h (.in0(mul_out / 10), .in1(r), .sel(sel_h), .out(out_h));
-    mux4 mux_l (.in0(q), .in1(mul_out % 10), .in2(calc_out), .in3(0), .out(out_l), .sel(sel_l));
-    
-    
+    assign {ph, pl} = mul_out; 
+  
+    mux2 mux_h (.in0(ph), .in1(r), .sel(sel_h), .out(out_h));
+    mux4 mux_l (.in0(q), .in1(pl), .in2(calc_out), .in3(0), .out(out_l), .sel(sel_l));
+        
 //    register_file rf(
 endmodule

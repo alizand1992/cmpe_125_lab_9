@@ -31,7 +31,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="13"/>
+    <Option Name="WTXSimLaunchSim" Val="38"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -63,6 +63,15 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="Z:/new/Y_shift_register.v"/>
           <Attr Name="ImportTime" Val="1575226728"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/alu.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_7/task_1/task_1.srcs/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/alu.v"/>
+          <Attr Name="ImportTime" Val="1532486004"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -185,10 +194,46 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/register_file.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_7/task_1/task_1.srcs/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/register_file.v"/>
+          <Attr Name="ImportTime" Val="1532485772"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/new/shift_register.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="Z:/new/shift_register.v"/>
           <Attr Name="ImportTime" Val="1575226472"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/small_calc_cu.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_7/task_1/task_1.srcs/sources_1/new/small_calc_cu.v"/>
+          <Attr Name="ImportTime" Val="1573110650"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/small_calc_cu_dp.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_7/task_1/task_1.srcs/sources_1/new/small_calc_cu_dp.v"/>
+          <Attr Name="ImportTime" Val="1573108563"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/small_calculator_dp.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_7/task_1/task_1.srcs/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/small_calculator_dp.v"/>
+          <Attr Name="ImportTime" Val="1534220448"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -223,56 +268,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/full_calc_dp.v">
         <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/alu.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_7/task_1/task_1.srcs/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/alu.v"/>
-          <Attr Name="ImportTime" Val="1532486004"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/register_file.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_7/task_1/task_1.srcs/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/register_file.v"/>
-          <Attr Name="ImportTime" Val="1532485772"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/small_calc_cu.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_7/task_1/task_1.srcs/sources_1/new/small_calc_cu.v"/>
-          <Attr Name="ImportTime" Val="1573110650"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/small_calc_cu_dp.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_7/task_1/task_1.srcs/sources_1/new/small_calc_cu_dp.v"/>
-          <Attr Name="ImportTime" Val="1573108563"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/small_calculator_dp.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_7/task_1/task_1.srcs/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/small_calculator_dp.v"/>
-          <Attr Name="ImportTime" Val="1534220448"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -347,11 +342,26 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sim_1/new/small_calc_cu_tb.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/small_calc_dp_tb.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="full_calc_dp_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SrcSet" Val="sources_1"/>

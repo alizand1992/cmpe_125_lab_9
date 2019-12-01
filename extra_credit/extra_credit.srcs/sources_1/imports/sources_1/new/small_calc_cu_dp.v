@@ -1,4 +1,4 @@
-module control_unit_data_path(
+module small_calc_cu_dp(
     input clk, go, rst,
     input [3:0] in1, in2,
     input [1:0] op,
@@ -13,7 +13,7 @@ module control_unit_data_path(
     
     reg [3:0] ns;
         
-    control_unit cu (
+    small_calc_cu cu (
         .clk(clk), .op(op), .cs(cs),
         .s1(s1), .wa(wa), .raa(raa), .rab(rab), .c(c),
         .we(we), .rea(rea), .reb(reb), .s2(s2), .done(done)
