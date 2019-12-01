@@ -1,11 +1,11 @@
 module mux2 #(parameter WIDTH = 4)
     (
-    input  [WIDTH - 1:0] d1,
-    input  [WIDTH - 1:0] d2,
+    input  [WIDTH - 1:0] in0,
+    input  [WIDTH - 1:0] in1,
     input  sel,
-    output [WIDTH - 1:0] y
+    output [WIDTH - 1:0] out
     );
 
-    assign y = sel ? d1: d2;
+    assign out = sel ? in0: in1;
 
 endmodule

@@ -1,180 +1,31 @@
-module CU (
-        input wire go, clk, rst,
-        input wire [1:0] op,
-        output reg [1:0] s1, wa, raa, rab, c,
-        output reg we, rea, reb, s2, done,
-        output reg [3:0] cs                    //current state
+module small_calc_cu(
+    input clk,
+    input [1:0] op,
+    input [3:0] cs,
+    
+    output wire [1:0] s1, wa, raa, rab, c,
+    output wire we, rea, reb, s2, done
 );
-
-    reg [3:0] ns;
-
-    always @ (rst)
-    begin 
-        cs = 0;                    //current state = 0
-    end
     
-    always @ (posedge clk) 
-    begin
-        cs = ns;
-    end    
+    reg[14:0] controls;
     
-    always @ (cs, go, op)          //state machine logic
+    assign { s1, wa, raa, rab, c, we, rea, reb, s2, done } = controls;
+
+    always @ (posedge clk)
     begin
-    case(cs)
-        4'b0: 
-            if(!go) 
-                ns = 4'b0;
-            else 
-                ns = 4'b0001;
-        4'b0001: 
-            ns = 4'b0010;
-        4'b0010:
-            ns = 4'b0011;
-        4'b0011: 
-            if(op == 2'b00) // xor
-                ns = 4'b0100;
-            else if(op == 2'b11) // and
-                ns = 4'b0101;
-            else if(op == 2'b10) // subtract
-                ns = 4'b0110;
-            else if(op == 2'b01) // add
-                ns = 4'b0111;
-        4'b0100: 
-            ns = 4'b1000;
-        4'b0101: 
-            ns = 4'b1000;
-        4'b0110: 
-            ns = 4'b1000;
-        4'b0111: 
-            ns = 4'b1000;
-        4'b1000:
-            ns = 4'b0;
-        default:
-            ns = 4'b0;
-    endcase
-    end
-        
-    always @ (cs)
-    begin
-    case(cs)
-        4'b0: 
-        begin
-            s1 = 1;
-            wa = 0;
-            we = 0;
-            raa = 0;
-            rea = 0;
-            rab = 0;
-            reb = 0;
-            c = 0;
-            s2 = 0;
-            done = 0;
-        end
-        4'b0001: 
-        begin
-            s1 = 3;
-            wa = 1;
-            we = 1;
-            raa = 0;
-            rea = 0;
-            rab = 0;
-            reb = 0;
-            c = 0;
-            s2 = 0;
-            done = 0;
-        end
-        4'b0010: 
-        begin
-            s1 = 2;
-            wa = 2;
-            we = 1;
-            raa = 0;
-            rea = 0;
-            rab = 0;
-            reb = 0;
-            c = 0;
-            s2 = 0;
-            done = 0;
-        end
-        4'b0011: 
-        begin
-            s1 = 1;
-            wa = 0;
-            we = 0;
-            raa = 0;
-            rea = 0;
-            rab = 0;
-            reb = 0;
-            c = 0;
-            s2 = 0;
-            done = 0;
-        end
-        4'b0100: 
-        begin
-            s1 = 0;
-            wa = 3;
-            we = 1;
-            raa = 1;
-            rea = 1;
-            rab = 2;
-            reb = 1;
-            c = 0;
-            s2 = 0;
-            done = 0;
-        end
-        4'b0101:
-        begin
-            s1 = 0;
-            wa = 3;
-            we = 1;
-            raa = 1;
-            rea = 1;
-            rab = 2;
-            reb = 1;
-            c = 1;
-            s2 = 0;
-            done = 0;
-        end
-        4'b0110:
-        begin
-            s1 = 0;
-            wa = 3;
-            we = 1;
-            raa = 1;
-            rea = 1;
-            rab = 2;
-            reb = 1;
-            c = 2;
-            s2 = 0;
-            done = 0;
-        end
-        4'b0111: 
-        begin
-            s1 = 0;
-            wa = 3;
-            we = 1;
-            raa = 1;
-            rea = 1;
-            rab = 2;
-            reb = 1;
-            c = 3;
-            s2 = 0;
-            done = 0;
-        end
-        4'b1000:
-        begin
-            s1 = 1;
-            wa = 0;
-            we = 0;
-            raa = 3;
-            rea = 1;
-            rab = 3;
-            reb = 1;
-            c = 0;          //c = 2
-            s2 = 1;
-            done = 1;
-        end
+        case(cs)
+            4'b0000: controls <= 15'b00_00_00_00_00_0_0_0_0_0;
+            4'b0001: controls <= 15'b01_01_00_00_00_1_0_0_0_0;             
+            4'b0010: controls <= 15'b10_10_00_00_00_1_0_0_0_0;
+            4'b0011:
+                case(op)
+                    2'b11: controls <= 15'b11_11_01_10_00_1_1_1_0_0;
+                    2'b10: controls <= 15'b11_11_01_10_01_1_1_1_0_0;
+                    2'b01: controls <= 15'b11_11_01_10_10_1_1_1_0_0;
+                    2'b00: controls <= 15'b11_11_01_10_11_1_1_1_0_0;                    
+                endcase
+            4'b0100: controls <= 15'b00_00_11_11_10_0_1_1_1_1;
+            default: controls <= 15'b00_00_00_00_00_0_0_0_0_0;
         endcase
     end
-        
 endmodule
