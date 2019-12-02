@@ -12,8 +12,7 @@ module full_calc_dp(
     output [3:0] out_h,
     output [3:0] out_l,
     output [3:0] calc_cs,
-    output [2:0] div_cs,
-    output [2:0] f
+    output [2:0] div_cs
 );
 
     wire [7:0] mul_out;
@@ -44,18 +43,4 @@ module full_calc_dp(
   
     mux2 mux_h (.in0(q), .in1(ph), .sel(sel_h), .out(out_h));
     mux4 mux_l (.in0(r), .in1(pl), .in2(calc_out), .in3(0), .out(out_l), .sel(sel_l));
-        
-    always @ (posedge clk, posedge rst)
-    begin
-        case(cs) 
-            4'b0000: // Idle do notning
-            begin
-            end
-            
-            4'b0001: // cp;;ect x, y, and f
-            begin
-            end 
-        
-        endcase
-    end
 endmodule

@@ -1,6 +1,6 @@
 module en_flop #(parameter WIDTH = 4) 
 (
-    input clk, en, rst,
+    input clk, en,
     input [WIDTH - 1:0] in,
     
     output [WIDTH - 1:0] out
@@ -8,11 +8,9 @@ module en_flop #(parameter WIDTH = 4)
 
     reg [WIDTH - 1:0] mem;
     
-    always @ (posedge clk, posedge rst)
+    always @ (posedge clk)
     begin
-        if (rst) 
-            mem = 0;
-        else if (en) 
+        if (en) 
             mem = in;
     end
     
