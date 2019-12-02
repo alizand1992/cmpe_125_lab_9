@@ -14,7 +14,7 @@ module divider_data_path
    wire [4:0] R_data;
    wire [2:0] count_out;
 
-   mux2 #(5) input_mux(.in0(sub_out), .in1(0), .sel(mux1), .out(R_data));
+   mux2 #(5) input_mux(.in0(0), .in1(sub_out), .sel(mux1), .out(R_data));
 
    shift_register #(5) R_shifter
      (
@@ -47,7 +47,7 @@ module divider_data_path
       .Q(count_out), .cnt_out(cnt_out)
      );
 
-   mux2 r_mux(.in0(remainder_out[3:0]), .in1(0), .sel(mux2), .out(R));
+   mux2 r_mux(.in0(0), .in1(remainder_out[3:0]), .sel(mux2), .out(R));
 
-   mux2 q_mux (.in0(dividend_out), .in1(0), .sel(mux3), .out(Q));
+   mux2 q_mux (.in0(0), .in1(dividend_out), .sel(mux3), .out(Q));
 endmodule

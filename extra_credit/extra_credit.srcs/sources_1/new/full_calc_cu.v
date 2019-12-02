@@ -1,5 +1,5 @@
 module full_calc_cu(
-    input go,
+    input go, clk,
     input [2:0] f,
     
     output en_f, en_x, en_y, go_calc, go_div, set_h, set_l,
