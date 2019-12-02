@@ -1,8 +1,9 @@
 module full_calc_cu(
     input go, clk, rst,
     input [2:0] f,
+    input done_calc, done_div,
     
-    output en_f, en_x, en_y, go_calc, go_div, sel_h,
+    output en_f, en_x, en_y, go_calc, go_div, sel_h, done,
     output en_out_h, en_out_l,
     output [1:0] sel_l,
     output y_sel, x_sel,
