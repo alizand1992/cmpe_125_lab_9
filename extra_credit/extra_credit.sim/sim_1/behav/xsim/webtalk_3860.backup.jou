@@ -2,11 +2,11 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Dec  2 17:02:13 2019
-# Process ID: 12576
+# Start of session at: Mon Dec  2 15:52:20 2019
+# Process ID: 3860
 # Current directory: C:/Users/damie/Documents/GitHub/cmpe_125_lab_9/extra_credit/extra_credit.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/damie/Documents/GitHub/cmpe_125_lab_9/extra_credit/extra_credit.sim/sim_1/behav/xsim/xsim.dir/full_calc_dp_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source C:/Users/damie/Documents/GitHub/cmpe_125_lab_9/extra_credit/extra_credit.sim/sim_1/behav/xsim/xsim.dir/full_calc_cu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/damie/Documents/GitHub/cmpe_125_lab_9/extra_credit/extra_credit.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: C:/Users/damie/Documents/GitHub/cmpe_125_lab_9/extra_credit/extra_credit.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/damie/Documents/GitHub/cmpe_125_lab_9/extra_credit/extra_credit.sim/sim_1/behav/xsim/xsim.dir/full_calc_dp_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+source C:/Users/damie/Documents/GitHub/cmpe_125_lab_9/extra_credit/extra_credit.sim/sim_1/behav/xsim/xsim.dir/full_calc_cu_tb_behav/webtalk/xsim_webtalk.tcl -notrace

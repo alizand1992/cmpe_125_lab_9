@@ -31,11 +31,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-<<<<<<< HEAD
-    <Option Name="WTXSimLaunchSim" Val="61"/>
-=======
-    <Option Name="WTXSimLaunchSim" Val="73"/>
->>>>>>> tb
+    <Option Name="WTXSimLaunchSim" Val="74"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -361,12 +357,16 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
-<<<<<<< HEAD
       <File Path="$PSRCDIR/sim_1/new/full_calc_dp_tb.v">
         <FileInfo>
-=======
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sim_1/new/full_calc_cu_tb.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -377,29 +377,6 @@
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="G:/My Drive/Divider/Divider.srcs/sim_1/new/divider_tb.v"/>
           <Attr Name="ImportTime" Val="1574105201"/>
->>>>>>> tb
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-<<<<<<< HEAD
-      <File Path="$PSRCDIR/sim_1/imports/new/divider_tb.v">
-=======
-      <File Path="$PSRCDIR/sim_1/new/full_calc_cu_dp_tb.v">
->>>>>>> tb
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="G:/My Drive/Divider/Divider.srcs/sim_1/new/divider_tb.v"/>
-          <Attr Name="ImportTime" Val="1574105201"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/new/full_calc_dp_tb.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -423,11 +400,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-<<<<<<< HEAD
         <Option Name="TopModule" Val="full_calc_dp_tb"/>
-=======
-        <Option Name="TopModule" Val="full_calc_cu_tb"/>
->>>>>>> tb
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
