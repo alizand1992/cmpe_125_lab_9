@@ -30,7 +30,10 @@ module full_calc_cu(
                 4'b0000: 
                 begin 
                     controls = 15'b00_00_0_0_0_0_0_0_0_0_0_0_0;
-                    ns = 1;    
+                    if (go)
+                        ns = 1; 
+                    else 
+                        ns = 0;
                 end
 
                 4'b0001: 
