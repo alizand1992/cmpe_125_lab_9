@@ -4,7 +4,7 @@ module full_calc_cu_tb;
     reg [2:0] f; 
     
     wire done;
-    wire done_calc, done_div;
+    reg done_calc, done_div;
     
     full_calc_cu DUT (
         .clk(clk), .go(go), .f(f), .rst(rst), .done(done),
@@ -13,26 +13,31 @@ module full_calc_cu_tb;
     
     reg [3:0] cs, ns;
     integer i, j, k;
+    integer error;
     
     initial
     begin
         clk = 0;
+        rst = 0;
         go = 1;
         cs = 0;
+        f = 1;
+        error = 0;
+       
         
-        while (!go || rst)
-        begin
-            cs = 0;
-            if (cs != 0)
-            begin
-                $display ("Error, started at !go");
-            end
-        end
-        for (i = 1; i < 14; i = i + 1)
-            begin
-            cs = i;
-            while (cs ==
-                
+        f = 3'b000;
+        done_calc = 0;
+        
+        #10
+        if(cs != 11)
+            error = error + 1;
+        done_calc = 1;
+        #2
+        
+        if (cs != 10)
+            error = error + 1;
+            
+        $finish;
                  
     end    
     
