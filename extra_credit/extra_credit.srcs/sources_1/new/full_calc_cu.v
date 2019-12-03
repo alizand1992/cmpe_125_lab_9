@@ -96,7 +96,11 @@ module full_calc_cu(
                     ns = 13;    
                 end
                 
-                4'b1010: controls = 15'b00_00_0_0_0_0_0_0_0_0_0_0_1;
+                4'b1010: 
+                begin
+                    controls = 15'b00_00_0_0_0_0_0_0_0_0_0_0_1;
+                    ns = 0;
+                end
                 
                 4'b1011:
                 begin

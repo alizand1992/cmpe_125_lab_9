@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1575333958">
+  <File Type="BITSTR-BMM" Name="full_calc_fpga_bd.bmm"/>
   <File Type="ROUTE-PWR" Name="full_calc_fpga_power_routed.rpt"/>
   <File Type="PA-TCL" Name="full_calc_fpga.tcl"/>
-  <File Type="BITSTR-BMM" Name="full_calc_fpga_bd.bmm"/>
+  <File Type="OPT-DCP" Name="full_calc_fpga_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="full_calc_fpga_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="full_calc_fpga_reports.tcl"/>
-  <File Type="OPT-DCP" Name="full_calc_fpga_opt.dcp"/>
   <File Type="OPT-DRC" Name="full_calc_fpga_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="full_calc_fpga.hwdef"/>
   <File Type="PWROPT-DCP" Name="full_calc_fpga_pwropt.dcp"/>
@@ -25,19 +25,20 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="full_calc_fpga_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="full_calc_fpga_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="full_calc_fpga_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="full_calc_fpga_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="full_calc_fpga.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="full_calc_fpga_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="full_calc_fpga_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="full_calc_fpga.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="full_calc_fpga_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="full_calc_fpga_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="full_calc_fpga_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="full_calc_fpga.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="full_calc_fpga_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="full_calc_fpga_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="full_calc_fpga_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="full_calc_fpga_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="full_calc_fpga_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="full_calc_fpga_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="full_calc_fpga_timing_summary_routed.rpx"/>
+  <File Type="RDI-RDI" Name="full_calc_fpga.vdi"/>
   <File Type="ROUTE-CLK" Name="full_calc_fpga_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="full_calc_fpga_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="full_calc_fpga_bus_skew_routed.pb"/>
@@ -48,7 +49,6 @@
   <File Type="BITSTR-RBT" Name="full_calc_fpga.rbt"/>
   <File Type="BITSTR-NKY" Name="full_calc_fpga.nky"/>
   <File Type="BG-DRC" Name="full_calc_fpga.drc"/>
-  <File Type="RDI-RDI" Name="full_calc_fpga.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
