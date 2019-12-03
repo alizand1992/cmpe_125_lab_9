@@ -7,10 +7,11 @@ module full_calc_cu(
     output en_out_h, en_out_l,
     output [1:0] sel_l,
     output y_sel, x_sel,
-    output [1:0] op_calc
+    output [1:0] op_calc,
+    output reg [3:0] cs
 );
 
-    reg [3:0] cs, ns;
+    reg [3:0] ns;
     reg [14:0] controls;
     reg [1:0] mul_counter;
     
@@ -21,7 +22,7 @@ module full_calc_cu(
         if (rst) begin
             cs = 0;
             ns = 0;
-            mul_counter = 2;
+            mul_counter = 3;
         end
         else begin
             cs = ns;
@@ -67,13 +68,13 @@ module full_calc_cu(
                 
                 4'b0101: 
                 begin
-                    controls = 15'b00_01_0_0_0_0_0_1_1_1_0_0_0;
+                    controls = 15'b00_01_0_0_0_0_0_1_1_1_1_1_0;
                     ns = 13;
                 end    
                 
                 4'b0110: 
                 begin
-                    controls = 15'b00_00_0_0_0_0_1_0_1_1_0_0_0;
+                    controls = 15'b00_00_0_0_0_0_1_0_1_1_1_1_0;
                     ns = 12;    
                 end
                 
@@ -91,7 +92,7 @@ module full_calc_cu(
                 
                 4'b1001: 
                 begin
-                    controls = 15'b00_00_0_0_0_0_0_0_1_1_1_0_0;
+                    controls = 15'b00_01_0_0_0_0_0_1_1_1_1_0_0;
                     ns = 13;    
                 end
                 

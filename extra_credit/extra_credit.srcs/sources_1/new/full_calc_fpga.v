@@ -4,6 +4,7 @@ module full_calc_fpga
     input [3:0] x, y,
     input [2:0] f,
     
+    output [3:0] cs,
     output done,
     output [7:0] LEDOUT,
     output [3:0] LEDSEL    
@@ -25,8 +26,8 @@ module full_calc_fpga
     );
     
     full_calc_cu_dp cudp (
-        .x(x), .y(y), .in_f(f), .clk(clk), .go(go),
-        .done(done), .out_h(out_h), .out_l(out_l)
+        .x(x), .y(y), .in_f(f), .clk(clk), .go(go), .rst(rst),
+        .done(done), .out_h(out_h), .out_l(out_l), .cs(cs)
     );
     
     bcd_to_7seg LED0 (.BCD(val0), .s(led0));
@@ -36,15 +37,22 @@ module full_calc_fpga
 
     led_mux LED_MUX (clk_5KHz, rst, led3, led2, led1, led0, LEDSEL, LEDOUT);
     
-    always @ (posedge clk)
+    always @ (posedge clk_5KHz)
     begin
         if (f == 2 || f == 6) 
         begin
             mul_out = {out_h, out_l};
-            val0 = mul_out % 10;
-            val1 = (mul_out / 10) % 10;
-            val1 = (mul_out / 100) % 10;
-            val1 = (mul_out / 1000) % 10;
+            val0 <= mul_out % 10;
+            val1 <= (mul_out / 10) % 10;
+            val2 <= (mul_out / 100) % 10;
+            val3 <= (mul_out / 1000) % 10;
+        end
+        else
+        begin
+            val0 <= out_l % 10;
+            val1 <= out_l / 10;
+            val2 <= out_h % 10;
+            val3 <= out_h / 10;
         end
     end
     

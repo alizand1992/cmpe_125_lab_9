@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Mon Dec  2 16:46:01 2019
+# Process ID: 656
+# Current directory: C:/Users/Ali/Documents/cmpe_125_lab_9/extra_credit/extra_credit.runs/synth_1
+# Command line: vivado.exe -log full_calc_fpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source full_calc_fpga.tcl
+# Log file: C:/Users/Ali/Documents/cmpe_125_lab_9/extra_credit/extra_credit.runs/synth_1/full_calc_fpga.vds
+# Journal file: C:/Users/Ali/Documents/cmpe_125_lab_9/extra_credit/extra_credit.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source full_calc_fpga.tcl -notrace

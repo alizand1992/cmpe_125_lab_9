@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1575333958">
+  <File Type="BITSTR-BMM" Name="full_calc_fpga_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="full_calc_fpga_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="full_calc_fpga_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="full_calc_fpga_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="full_calc_fpga.tcl"/>
+  <File Type="OPT-TIMING" Name="full_calc_fpga_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="full_calc_fpga_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="full_calc_fpga_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="full_calc_fpga_reports.tcl"/>
+  <File Type="OPT-DRC" Name="full_calc_fpga_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="full_calc_fpga.hwdef"/>
+  <File Type="PWROPT-DCP" Name="full_calc_fpga_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="full_calc_fpga_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="full_calc_fpga_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="full_calc_fpga_placed.dcp"/>
+  <File Type="PLACE-IO" Name="full_calc_fpga_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="full_calc_fpga_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="full_calc_fpga_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="full_calc_fpga_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="full_calc_fpga_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="full_calc_fpga_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="full_calc_fpga_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="full_calc_fpga.bgn"/>
+  <File Type="PLACE-TIMING" Name="full_calc_fpga_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="full_calc_fpga_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="full_calc_fpga.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="full_calc_fpga_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="full_calc_fpga_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="full_calc_fpga_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="full_calc_fpga.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="full_calc_fpga_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="full_calc_fpga_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="full_calc_fpga_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="full_calc_fpga_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="full_calc_fpga_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="full_calc_fpga_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="full_calc_fpga.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="full_calc_fpga_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="full_calc_fpga.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="full_calc_fpga_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="full_calc_fpga_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="full_calc_fpga.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="full_calc_fpga_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="full_calc_fpga_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="full_calc_fpga_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="full_calc_fpga_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="full_calc_fpga_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="full_calc_fpga_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="full_calc_fpga_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="full_calc_fpga_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="full_calc_fpga_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="full_calc_fpga_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="full_calc_fpga_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="full_calc_fpga_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="full_calc_fpga_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="full_calc_fpga_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="full_calc_fpga_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="full_calc_fpga_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="full_calc_fpga_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="full_calc_fpga_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="full_calc_fpga_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="full_calc_fpga.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="full_calc_fpga_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="full_calc_fpga.rbt"/>
+  <File Type="BITSTR-NKY" Name="full_calc_fpga.nky"/>
+  <File Type="BG-DRC" Name="full_calc_fpga.drc"/>
+  <File Type="RDI-RDI" Name="full_calc_fpga.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/Y_shift_register.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/new/Y_shift_register.v"/>
+        <Attr Name="ImportTime" Val="1575226728"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_7/task_1/task_1.srcs/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/alu.v"/>
+        <Attr Name="ImportTime" Val="1532486004"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/and2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_5/task_1/task_1.srcs/sources_1/imports/new/and2.v"/>
+        <Attr Name="ImportTime" Val="1570034392"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/bcd_to_7seg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/new/bcd_to_7seg.v"/>
+        <Attr Name="ImportTime" Val="1574105196"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/button_debouncer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/new/button_debouncer.v"/>
+        <Attr Name="ImportTime" Val="1574105196"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/cla.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_5/task_1/task_1.srcs/sources_1/imports/new/cla.v"/>
+        <Attr Name="ImportTime" Val="1571504488"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/cla8.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_5/task_1/task_1.srcs/sources_1/new/cla8.v"/>
+        <Attr Name="ImportTime" Val="1571504488"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/clk_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/new/clk_gen.v"/>
+        <Attr Name="ImportTime" Val="1574105196"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/comparator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/new/comparator.v"/>
+        <Attr Name="ImportTime" Val="1575225544"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/divider.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/new/divider.v"/>
+        <Attr Name="ImportTime" Val="1574105200"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/divider_control_unit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/new/divider_control_unit.v"/>
+        <Attr Name="ImportTime" Val="1575225812"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/divider_data_path.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/new/divider_data_path.v"/>
+        <Attr Name="ImportTime" Val="1575226331"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/en_flop.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/flop.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_5/task_1/task_1.srcs/sources_1/new/flop.v"/>
+        <Attr Name="ImportTime" Val="1571504488"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/full_calc_cu.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/full_calc_cu_dp.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/full_calc_dp.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/half_adder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_5/task_1/task_1.srcs/sources_1/imports/new/half_adder.v"/>
+        <Attr Name="ImportTime" Val="1571504488"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/led_mux.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/new/led_mux.v"/>
+        <Attr Name="ImportTime" Val="1574105200"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/multiplier.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_5/task_1/task_1.srcs/sources_1/new/multiplier.v"/>
+        <Attr Name="ImportTime" Val="1571504488"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/mux2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/new/mux2.v"/>
+        <Attr Name="ImportTime" Val="1575225472"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/mux4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_7/task_1/task_1.srcs/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/mux4.v"/>
+        <Attr Name="ImportTime" Val="1532486092"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/pp.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_5/task_1/task_1.srcs/sources_1/new/pp.v"/>
+        <Attr Name="ImportTime" Val="1571502039"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/register_file.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_7/task_1/task_1.srcs/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/register_file.v"/>
+        <Attr Name="ImportTime" Val="1532485772"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/shift_register.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/new/shift_register.v"/>
+        <Attr Name="ImportTime" Val="1575226472"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/small_calc_cu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_7/task_1/task_1.srcs/sources_1/new/small_calc_cu.v"/>
+        <Attr Name="ImportTime" Val="1573110650"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/small_calc_cu_dp.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_7/task_1/task_1.srcs/sources_1/new/small_calc_cu_dp.v"/>
+        <Attr Name="ImportTime" Val="1573108563"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/small_calculator_dp.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_7/task_1/task_1.srcs/sources_1/imports/CMPE 125 Lab 7 Small Calculator DP Source Code/small_calculator_dp.v"/>
+        <Attr Name="ImportTime" Val="1534220448"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/subtractor.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/new/subtractor.v"/>
+        <Attr Name="ImportTime" Val="1575226505"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ud_counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/new/ud_counter.v"/>
+        <Attr Name="ImportTime" Val="1575226618"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/xor2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../cmpe_125_lab_5/task_1/task_1.srcs/sources_1/imports/new/xor2.v"/>
+        <Attr Name="ImportTime" Val="1570034394"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/full_calc_fpga.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="full_calc_fpga"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,10 +1,10 @@
 module full_calc_cu_dp(
     input [3:0] x, y,
     input [2:0] in_f,
-    input clk, go,
+    input clk, go, rst,
     
     output done, 
-    output [3:0] out_h, out_l
+    output [3:0] out_h, out_l, cs
 );
 
     wire en_f, en_x, en_y, go_calc, go_div, x_sel, y_sel, rst, sel_h;
@@ -30,8 +30,9 @@ module full_calc_cu_dp(
     full_calc_cu cu(
         .go(go), .clk(clk), .f(f), 
         
+        .cs(cs), .rst(rst),
         .en_f(en_f), .en_x(en_x), .en_y(en_y), .go_calc(go_calc), .go_div(go_div), 
-        .en_out_h(en_out_h), .en_out_l(en_out_l),
-        .set_h(set_h), .set_l(set_l), .y_sel(y_sel), .x_sel(x_sel), .op_calc(op_calc)
+        .en_out_h(en_out_h), .en_out_l(en_out_l), .done_calc(done_calc), .done_div(done_div),
+        .sel_h(sel_h), .sel_l(sel_l), .y_sel(y_sel), .x_sel(x_sel), .op_calc(op_calc)
     );   
 endmodule
